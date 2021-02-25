@@ -32,19 +32,28 @@ Trouble: Trouble,
 
 function HogCard({pig}){
     const [display, setDisplay] = useState(false)
-  
+    const [hidden, setHidden] = useState(true)
+    
     function showDetails(){
         setDisplay((display) => !display)
     }
 
+    function handleHidePig(){
+        setHidden((hidden) => !hidden)
+    }
+    
+
     return(
     <div >
+    <button onClick={handleHidePig} id="hide">Hide the Bacon</button>
+    {hidden ? <div>
     <h2>{pig.name}</h2>
     <img src={images[pig.name]} alt={pig.name} />
     <button onClick={showDetails}id="show-details">Show Details</button>
     <div id="hog-data">
     {display ? <HogData pig={pig}/> : null}
-    </div>
+    </div> 
+    </div> : null}
     </div>
 
     )

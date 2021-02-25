@@ -10,13 +10,15 @@ function HogList({hogs, onHeavyHogs, hogWeight}) {
     
     const heavyHogsCards = heavyHogs.map(hog => < HogCard key={hog.name} pig={hog}/>)
         
-    
-    const pig = hogs.map(hog => < HogCard key={hog.name} pig={hog}/>)
+    const pig = hogs.map(hog => < HogCard key={hog.name} pig={hog} />)
+
+   
 
     return(
         <div>
             {/* {pig} */}
             {hogWeight ? pig : heavyHogsCards}
+            
         </div>
     )
 }
