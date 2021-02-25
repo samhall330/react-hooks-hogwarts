@@ -14,19 +14,19 @@ import Porkchop from "../assets/porkchop.jpg";
 import Trouble from "../assets/trouble.jpg";
 import TruffleShuffle from "../assets/truffle_shuffle.jpg";
 
-const images = {AugustusGloop: AugustusGloop,
+const images = {"Augustus Gloop": AugustusGloop,
 Babe: Babe,
 Bailey: Bailey,
 Cherub: Cherub,
-GalaxyNote: GalaxyNote,
-LeggoMyEggo: LeggoMyEggo,
+"Galaxy Note": GalaxyNote,
+"Leggo My Eggo": LeggoMyEggo,
 Peppa: Peppa,
-PiggySmalls: PiggySmalls,
+"Piggy smalls": PiggySmalls,
 Piglet: Piglet,
 Porco: Porco,
 Porkchop: Porkchop,
 Trouble: Trouble,
-TruffleShuffle: TruffleShuffle}
+"Truffle Shuffle": TruffleShuffle}
 
 
 
@@ -38,7 +38,7 @@ function HogCard({pig}){
     }
 
     return(
-    <div>
+    <div >
     <h2>{pig.name}</h2>
     <img src={images[pig.name]} alt={pig.name} />
     <button onClick={showDetails}id="show-details">Show Details</button>
