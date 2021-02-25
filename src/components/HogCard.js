@@ -44,12 +44,13 @@ function HogCard({pig}){
     
 
     return(
-    <div >
-    <button onClick={handleHidePig} id="hide">Hide the Bacon</button>
+        
+    <div className="ui eight wide column" onClick={showDetails}>
+    <button onClick={handleHidePig} id="hide">{hidden ? "Hide the bacon" : "Reveal the Bacon"}</button>
+        
     {hidden ? <div>
     <h2>{pig.name}</h2>
-    <img src={images[pig.name]} alt={pig.name} />
-    <button onClick={showDetails}id="show-details">Show Details</button>
+    <img style={{maxWidth: "100%"}} src={images[pig.name]} alt={pig.name} />
     <div id="hog-data">
     {display ? <HogData pig={pig}/> : null}
     </div> 
@@ -60,3 +61,4 @@ function HogCard({pig}){
 }
 
 export default HogCard;
+

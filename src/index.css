@@ -151,3 +151,22 @@ ul {
     transform: rotate(360deg);
   }
 }
+
+/*##########################*/
+
+body {
+  min-height: 100vh;
+  background: #eeeeee;
+}
+
+.border-md {
+  border-width: 2px !important;
+}
+
+.separator {
+  border-bottom: 1px dashed #aaa;
+}
+
+.text-small {
+  font-size: 0.85rem;
+}

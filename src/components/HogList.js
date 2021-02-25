@@ -17,8 +17,9 @@ function HogList({hogs, onHeavyHogs, hogWeight}) {
     return(
         <div>
             {/* {pig} */}
+            <div className="ui grid container">
             {hogWeight ? pig : heavyHogsCards}
-            
+            </div>
         </div>
     )
 }

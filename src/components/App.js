@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-    <div id="greased-filter">
+    <div style={{margin: "40px"}}id="greased-filter">
       <button onClick={handleGrease} id="greased" value="greased">Show {showHogs ? "Greased" : "All"} Hogs</button>
     <button onClick={handleHeavyHogs}> {hogWeight ? "Organize Hogs" : "All Hogs"} </button>
     </div >
